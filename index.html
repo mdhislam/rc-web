@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AK Realty and Construction - Licensed Contractors & Real Estate Agents</title>
+    <meta name="description" content="Professional construction services and real estate solutions in Queens, Long Island, Brooklyn. Licensed contractors with decades of experience.">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+</head>
+<body>
+    <!-- Background Video Container -->
+    <div class="video-background">
+        <video id="background-video" autoplay muted loop>
+            <source src="assets/videos/kitchen.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+
+    <!-- Header -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="logo-section">
+                    <div class="logo">
+                        <svg viewBox="0 0 300 80" class="logo-svg">
+                            <text x="15" y="35" class="logo-text-main">AK</text>
+                            <text x="15" y="60" class="logo-text-sub">REALTY & CONSTRUCTION</text>
+                        </svg>
+                    </div>
+                    <div class="tagline">
+                        <span>Professional Construction & Real Estate Services</span>
+                    </div>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="#services" class="nav-link">Services</a></li>
+                    <li><a href="tel:17189868012" class="nav-link">Call Us</a></li>
+                    <li><button id="openQuoteModal" class="btn-quote">Get Quote</button></li>
+                </ul>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Quote Modal -->
+    <div id="quoteModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>Request a Free Quote</h2>
+                <span class="close">&times;</span>
+            </div>
+            <div class="modal-body">
+                <p class="quote-subtitle">Get a personalized estimate for your construction or real estate project</p>
+                <form class="quote-form" id="quoteForm">
+                    <div class="form-grid">
+                        <div class="form-group">
+                            <label for="name">Full Name *</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Phone Number *</label>
+                            <input type="tel" id="phone" name="phone" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email Address *</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="service">Service Type *</label>
+                            <select id="service" name="service" required>
+                                <option value="">Select a service</option>
+                                <option value="construction">General Construction</option>
+                                <option value="renovation">Home Renovation</option>
+                                <option value="kitchen">Kitchen Remodeling</option>
+                                <option value="bathroom">Bathroom Renovation</option>
+                                <option value="electrical">Electrical Work</option>
+                                <option value="plumbing">Plumbing Work</option>
+                                <option value="painting">Painting Services</option>
+                                <option value="flooring">Flooring Installation</option>
+                                <option value="realestate">Real Estate Services</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group full-width">
+                        <label for="address">Property Address</label>
+                        <input type="text" id="address" name="address">
+                    </div>
+                    <div class="form-group full-width">
+                        <label for="message">Project Description *</label>
+                        <textarea id="message" name="message" rows="4" placeholder="Please describe your project in detail..." required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Request Quote</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Content Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="main-content-centered">
+                <!-- Team Section -->
+                <div class="team-section">
+                    <h2>Our Licensed Team</h2>
+                    
+                    <!-- Team Cards Container -->
+                    <div class="team-cards-container">
+                        <!-- Tareq - Left Side -->
+                        <div class="team-card">
+                            <div class="team-member">
+                                <div class="member-image">
+                                    <img src="assets/images/aziz-profile.jpg" alt="Tareq Aziz (Nirob)">
+                                </div>
+                                <div class="member-info">
+                                    <h4>Tareq Aziz (Nirob)</h4>
+                                    <p class="member-title">Licensed Contractor & Real Estate Agent</p>
+                                    <p class="member-phone">📞 <a href="tel:17187108837">(718) 710-8837</a></p>
+                                    <p class="member-email">✉️ <a href="mailto:mohammed.aziz2011@hotmail.com">mohammed.aziz2011@hotmail.com</a></p>
+                                    <p class="member-license">Licensed under Winzone Realty Inc.</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Md - Right Side -->
+                        <div class="team-card">
+                            <div class="team-member">
+                                <div class="member-image">
+                                    <img src="assets/images/md-profile.jpg" alt="Md Habibul Islam (Kazal)">
+                                </div>
+                                <div class="member-info">
+                                    <h4>Md Habibul Islam (Kazal)</h4>
+                                    <p class="member-title">Licensed Contractor & Real Estate Agent</p>
+                                    <p class="member-phone">📞 <a href="tel:17189868012">(718) 986-8012</a></p>
+                                    <p class="member-email">✉️ <a href="mailto:mdhislam@yahoo.com">mdhislam@yahoo.com</a></p>
+                                    <p class="member-license">Licensed under Winzone Realty Inc.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Services Button -->
+                    <div class="services-cta">
+                        <a href="#services" class="btn btn-services">Our Services</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="container">
+            <div class="section-header">
+                <h2>Our Construction & Real Estate Services</h2>
+                <p>Comprehensive solutions for all your construction and real estate needs</p>
+            </div>
+            <div class="services-grid">
+                <div class="service-category">
+                    <h3>🏗️ General Construction</h3>
+                    <ul>
+                        <li>Home Extensions</li>
+                        <li>New Construction</li>
+                        <li>Complete Renovations</li>
+                        <li>Kitchen Remodeling</li>
+                        <li>Bathroom Renovation</li>
+                        <li>Roofing & Waterproofing</li>
+                        <li>Parapet Wall & Facade Repair</li>
+                        <li>Window Lintel Work</li>
+                    </ul>
+                </div>
+                <div class="service-category">
+                    <h3>⚡ Specialized Services</h3>
+                    <ul>
+                        <li>All Plumbing Work</li>
+                        <li>All Electrical Work</li>
+                        <li>Painting</li>
+                        <li>Sheetrock/Drywall</li>
+                        <li>Flooring Installation</li>
+                        <li>Chandelier Installation</li>
+                        <li>TV Mount Installation</li>
+                        <li>Furniture Assembly</li>
+                    </ul>
+                </div>
+                <div class="service-category">
+                    <h3>🔧 Additional Services</h3>
+                    <ul>
+                        <li>Tiles Work (Floor/Wall)</li>
+                        <li>Door Replacement</li>
+                        <li>Change Locks</li>
+                        <li>Installing Shelves</li>
+                        <li>Window Blind Installation</li>
+                        <li>Debris Removal</li>
+                        <li>Professional Cleaning</li>
+                        <li>And Much More</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <svg viewBox="0 0 300 80" class="logo-svg">
+                        <text x="15" y="35" class="logo-text-main">AK</text>
+                        <text x="15" y="60" class="logo-text-sub">REALTY & CONSTRUCTION</text>
+                    </svg>
+                </div>
+                <div class="footer-text">
+                    <p>&copy; 2025 AK Realty and Construction. All rights reserved.</p>
+                    <p>Licensed contractors serving Queens, Long Island, and Brooklyn</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html> 
